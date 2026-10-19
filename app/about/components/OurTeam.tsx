@@ -38,19 +38,8 @@ const OurTeam = () => {
               COO
             </p>
           </div>
-          <div className="flex flex-col">
-            <div
-              className="w-full aspect-square bg-cover bg-center rounded-lg sm:rounded-xl"
-              style={{ backgroundImage: "url('/assets/hassan.png')" }}>
-            </div>
-            <h5 className='font-mono mt-3 sm:mt-4 md:mt-5 text-white text-sm sm:text-base md:text-lg lg:text-xl'>
-             HASSAN IFTIKHAR
-            </h5>
-            <p className='font-sans text-white text-xs sm:text-sm md:text-base lg:text-xl'>
-              CTO
-            </p>
-          </div>
-          <div className="flex flex-col">
+          {/* Odd card out: span both columns, centered at single-column width (50% minus half the gap) */}
+          <div className="flex flex-col col-span-2 justify-self-center w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)]">
             <div
               className="w-full aspect-square bg-cover bg-center rounded-lg sm:rounded-xl"
               style={{ backgroundImage: "url('/assets/yao.png')" }}>
